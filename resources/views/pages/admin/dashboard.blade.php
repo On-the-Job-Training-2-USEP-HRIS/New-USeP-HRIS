@@ -23,8 +23,10 @@
                             </div>
                             <div class="col-7 d-flex align-items-center">
                                 <div class="numbers">
-                                    <p class="card-category">Visitors</p>
-                                    <h4 class="card-title">1,294</h4>
+                                    <p class="card-category">Users</p>
+                                    <h4 class="card-title">
+                                        <p>{{$result['users']}}</p>
+                                    </h4>
                                 </div>
                             </div>
                         </div>
@@ -39,13 +41,13 @@
                         <div class="row">
                             <div class="col-5">
                                 <div class="icon-big text-center">
-                                    <i class="la la-bar-chart"></i>
+                                    <i class="la la-pie-chart"></i>
                                 </div>
                             </div>
                             <div class="col-7 d-flex align-items-center">
                                 <div class="numbers">
-                                    <p class="card-category">Sales</p>
-                                    <h4 class="card-title">$ 1,345</h4>
+                                    <p class="card-category">Sections</p>
+                                    <h4 class="card-title">{{$result['sections']}}</h4>
                                 </div>
                             </div>
                         </div>
@@ -65,8 +67,8 @@
                             </div>
                             <div class="col-7 d-flex align-items-center">
                                 <div class="numbers">
-                                    <p class="card-category">Subscribers</p>
-                                    <h4 class="card-title">1303</h4>
+                                    <p class="card-category">Fields</p>
+                                    <h4 class="card-title">{{$result['sections']}}</h4>
                                 </div>
                             </div>
                         </div>
@@ -81,13 +83,13 @@
                         <div class="row">
                             <div class="col-5">
                                 <div class="icon-big text-center">
-                                    <i class="la la-check-circle"></i>
+                                    <i class="la la-sort-down"></i>
                                 </div>
                             </div>
                             <div class="col-7 d-flex align-items-center">
                                 <div class="numbers">
-                                    <p class="card-category">Order</p>
-                                    <h4 class="card-title">576</h4>
+                                    <p class="card-category">Subfields</p>
+                                    <h4 class="card-title">{{$result['fields']}}</h4>
                                 </div>
                             </div>
                         </div>
