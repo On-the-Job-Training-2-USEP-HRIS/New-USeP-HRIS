@@ -1,4 +1,4 @@
-@extends('layouts.admin.default')
+@extends('layouts.default.default')
 
 @section('content')
 <div class="content">
@@ -9,25 +9,20 @@
         <!-- Tab Container -->
         <div class="row tab-container">
 
-            <!--
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 tab-menu">
-                <div class="list-group"> </div>                
-            </div>            
-            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 tab section"> </div>
-            -->
-
             <!-- Tab Menu -->
             <div class="col-3 tab-menu position-fixed" style="overflow-y: visible;">
                 <div class="list-group">
                     <!-- (Javascript) -->
-                </div>                
+                </div>
             </div>
             <!-- /# Tab Menu -->
-            
+
             <!-- /# Tab Content -->
-            <div class="col-8 tab section" style="margin-left:30%">    
-                <!-- (Javascript) -->
-            </div>
+            <form class="col-8 form-content" style="margin-left:30%">
+                <div class="tab section">
+                    <!-- (Javascript) -->
+                </div>
+            </form>
             <!-- /# Tab Content -->
 
         </div>
@@ -45,7 +40,9 @@
 
 @section('js')
 <script src="{{ asset('pds-tab/side-tab.js') }}"></script> <!-- InitSideTab -->
-<script src="{{ asset('ajax/pds-view.js') }}"></script> <!-- Create PDS -->
+<script src="{{ asset('ajax/pds-create.js') }}"></script> <!-- Create PDS -->
+<script src="{{ asset('ajax/pds-view.js') }}"></script> <!-- View PDS -->
+<script src="{{ asset('ajax/pds-search-user.js') }}"></script> <!-- Search User | KeyUp -->
 @stop
 
 @section('jquery')
@@ -61,7 +58,9 @@ $(document).ready(function() {
         }
     });
 
-    ViewPdsTemplate("{{ action('DatabasePDS@GetPdsTemplate') }}"); // Display PDS @ pds-view.js 
+    ViewPdsTemplate("{{ action('DatabasePDS@GetPdsTemplate') }}"); // Display PDS @ pds-view.js
+
+    // InitKeyUp('{{ action('DatabaseUsers@SearchUser') }}', '#lname', '#fname', '#mname'); // Search User | KeyUp
 });
 </script>
 @stop

@@ -12,7 +12,8 @@
             </ul>
         </nav>
         <div class="copyright ml-auto">
-            Theme by <a href="http://www.themekita.com">ThemeKita</a>
+            <!-- Theme by <a href="http://www.themekita.com">ThemeKita</a> -->
+            <a href="#">ONEUSeP</a>
         </div>
     </div>
     <!-- /# Container Fluid -->

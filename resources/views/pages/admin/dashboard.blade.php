@@ -522,7 +522,7 @@
 @section('jquery')
 <script type="text/javascript">
 $(document).ready(function() {
-    
+
     $('#dashboard').addClass('active'); // Update Active Tab
 
     // TOKEN
