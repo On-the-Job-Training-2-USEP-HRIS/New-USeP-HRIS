@@ -1,20 +1,22 @@
 @extends('layouts.admin.default')
 
 @section('content')
-<div class="content">
-
+<div class="content" >
     <!-- Container-Fluid -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="load-content">
 
         <h4 class="page-title">Edit PDS</h4>
-        
+        <!-- Section area start -->
+            @include('pages.admin.sections.view-section',$result)
+         <!--/# Section area ends -->
     </div>
     <!-- /# Container-Fluid -->
 
 </div>
-@stop
+@stop   
 
 @section('css')
+
 @stop
 
 @section('js')

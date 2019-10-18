@@ -38,3 +38,21 @@ Route::post('/api/search-user','DatabaseUsers@SearchUser');
 
 Route::post('/api/view-pds','DatabasePDS@GetPdsTemplate');
 Route::post('/api/create-pds','DatabasePDS@CreatePDS');
+
+
+Route::get('/load-section','Section@loadSection');//load the section data
+Route::post('/edit-pds','Section@insertSection'); // Insert new section
+
+Route::get('/view-fields','Fields@ViewFields');
+
+Route::get('/load-field','Fields@loadField');
+
+Route::post('/view-fields','Fields@insertFields');
+
+
+Route::get('/view-subfields','Subfields@ViewSubfields');
+
+Route::post('/view-subfields','Subfields@InsertSubfields');
+
+Route::get('/load-subfield','Subfields@loadSubfield');
+

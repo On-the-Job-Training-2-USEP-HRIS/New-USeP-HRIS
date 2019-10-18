@@ -25,7 +25,9 @@ class Admin extends Controller
 
     // Route to View Edit PDS
     public function EditPDS(Request $request){
-        return view('pages.admin.pds-edit');
+         $section = new SectionModel();//Initialize section Model     
+        $result = json_decode($section::viewSection(),true); //Get Result
+        return view('pages.admin.pds-edit',compact('result'));
     }
 
     // Route to View View PDS
