@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\PdsModel; // Import PdsModel
-use App\SectionModel;
 
 class Admin extends Controller
 {
@@ -20,15 +18,11 @@ class Admin extends Controller
 
     // Route to View Edit PDS
     public function EditPDS(Request $request){
-        $section = new SectionModel();//Initialize section Model     
-        $result = json_decode($section::viewSection(),true); //Get Result
-        return view('pages.admin.pds-edit',compact('result'));
+        return view('pages.admin.pds-edit');
     }
 
     // Route to View View PDS
-    public function ViewPDS(Request $request){
-        $pds = new PdsModel(); // Initialize PDS Model      
-        $result = json_decode($pds::viewPds(),true); // Get Result            
-        return view('pages.admin.pds-view', compact('result'));	
+    public function ViewPDS(Request $request){          
+        return view('pages.admin.pds-view');	
     }
 }

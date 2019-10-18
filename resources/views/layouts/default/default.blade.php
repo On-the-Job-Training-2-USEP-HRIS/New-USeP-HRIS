@@ -18,8 +18,8 @@
     <!-- Wrapper -->
     <div class="wrapper">
     
-        @include('includes.admin.header') <!-- Header -->
-        @include('includes.admin.sidebar') <!-- Sidebar Navigation -->
+        @include('includes.default.header') <!-- Header -->
+        @include('includes.default.sidebar') <!-- Sidebar Navigation -->
         <div class="main-panel"> 
             @yield('content') <!-- Content -->
             {{-- @include('includes.admin.footer') --}} <!-- Footer -->

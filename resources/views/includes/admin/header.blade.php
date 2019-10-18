@@ -2,7 +2,7 @@
     
     <!-- Logo Header -->
     <div class="logo-header">
-        <a href="index.html" class="logo">
+        <a href="{{ action('Admin@Dashboard') }}" class="logo">
             USeP HRIS
         </a>
         <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
