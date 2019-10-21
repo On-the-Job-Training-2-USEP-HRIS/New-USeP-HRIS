@@ -7,7 +7,7 @@
 
         <h4 class="page-title">Edit PDS</h4>
         <!-- Section area start -->
-            @include('pages.admin.sections.view-section',$result)
+            @include('pages.admin.sections.view-section',$result);
          <!--/# Section area ends -->
     </div>
     <!-- /# Container-Fluid -->

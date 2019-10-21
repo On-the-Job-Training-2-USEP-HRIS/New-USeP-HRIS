@@ -21,6 +21,7 @@
                                     <i class="la la-users"></i>
                                 </div>
                             </div>
+                            <!-- count user area -->
                             <div class="col-7 d-flex align-items-center">
                                 <div class="numbers">
                                     <p class="card-category">Users</p>
@@ -29,6 +30,7 @@
                                     </h4>
                                 </div>
                             </div>
+                            <!--#END-->
                         </div>
                     </div>
                 </div>
@@ -44,12 +46,14 @@
                                     <i class="la la-pie-chart"></i>
                                 </div>
                             </div>
+                            <!-- Section count area -->
                             <div class="col-7 d-flex align-items-center">
                                 <div class="numbers">
                                     <p class="card-category">Sections</p>
                                     <h4 class="card-title">{{$result['sections']}}</h4>
                                 </div>
                             </div>
+                            <!--#END-->
                         </div>
                     </div>
                 </div>
@@ -65,12 +69,14 @@
                                     <i class="la la-newspaper-o"></i>
                                 </div>
                             </div>
+                            <!-- Field count area -->
                             <div class="col-7 d-flex align-items-center">
                                 <div class="numbers">
                                     <p class="card-category">Fields</p>
                                     <h4 class="card-title">{{$result['sections']}}</h4>
                                 </div>
                             </div>
+                            <!--#END-->
                         </div>
                     </div>
                 </div>
@@ -86,12 +92,14 @@
                                     <i class="la la-sort-down"></i>
                                 </div>
                             </div>
+                            <!-- Subfield count area-->
                             <div class="col-7 d-flex align-items-center">
                                 <div class="numbers">
                                     <p class="card-category">Subfields</p>
                                     <h4 class="card-title">{{$result['fields']}}</h4>
                                 </div>
                             </div>
+                            <!--END-->
                         </div>
                     </div>
                 </div>

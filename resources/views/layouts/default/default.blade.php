@@ -45,6 +45,5 @@
     
     @yield('js')
     @yield('jquery')
-
 </body>
 </html>
